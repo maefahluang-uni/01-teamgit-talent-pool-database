@@ -34,7 +34,7 @@ public class TestFeature1 {
 	
 	@Test
 	public void testDecrementToEven(){
-		counter._ctr = -12;
+		counter._ctr = -14;
 		counter.decrementToEven();
 		Assert.assertEquals(-14, counter._ctr);
 	}

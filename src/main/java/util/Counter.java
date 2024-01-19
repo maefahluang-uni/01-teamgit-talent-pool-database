@@ -92,8 +92,23 @@ private boolean isPrime1(int num) {
 	return true;
 }
 	// TODO: dev3- count the frequency of word in sentence,
-	// refactor source code from dev1 and dev2
-	public void countFrequency(String word, String sentence) {
-		_ctr = -99;
+    // refactor source code from dev1 and dev2
+    public void countFrequency(String word, String sentence) {
+        // Resetting _ctr to count the frequency
+        _ctr = 0;
+
+        // Tokenize the sentence using StringTokenizer
+        StringTokenizer tokenizer = new StringTokenizer(sentence);
+
+        // Loop through each token in the sentence
+        while (tokenizer.hasMoreTokens()) {
+            String token = tokenizer.nextToken();
+
+            // Check if the current token matches the target word
+            if (token.equals(word)) {
+                // Increment the frequency count
+                _ctr++;
+            }
+        }
 	}
 }

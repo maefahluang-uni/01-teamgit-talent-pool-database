@@ -33,84 +33,26 @@ public void incrementToEven() {
         _ctr++; // Increment if current value is odd to make it even
     }
 }
-
+//Java
     // TODO: dev1- method for decrement to closest even number
 	public void decrementToEven() {
 		if (_ctr % 2 != 0) {
 			_ctr--; // Decrement if current value is odd to make it even
 		}
 	}
-//hello 
-    // TODO: dev2- method for increment to closest prime number
-    public void incrementToPrime() {
-        _ctr = getNextPrime(_ctr);
-    }
+// TODO: dev2- method for increment to closest prime number
+public void incrementToPrime() {
+	_ctr = -99;
+}
 
-    // Helper method to find the next prime number
-    private int getNextPrime(int number) {
-        while (!isPrime(++number)) {
-            // Increment until a prime number is found
-        }
-        return number;
-    }
+// TODO: dev2- method for decrement to closest prime number
+public void decrementToPrime() {
+	_ctr = -99;
+}
 
-    // Helper method to check if a number is prime
-    private boolean isPrime(int num) {
-        if (num < 2) {
-            return false;
-        }
-        for (int i = 2; i <= Math.sqrt(num); i++) {
-            if (num % i == 0) {
-                return false;
-            }
-        }
-        return true;
-    }
-
-    // TODO: dev2- method for decrement to closest prime number
-    public void decrementToPrime() {
-        _ctr = getPreviousPrime(_ctr);
-    }
-
-    // Helper method to find the previous prime number
-    private int getPreviousPrime(int number) {
-        while (!isPrime(--number)) {
-            // Decrement until a prime number is found
-        }
-        return number;
-    }
-
-    // Helper method to check if a number is prime
-    private boolean isPrime1(int num) {
-        if (num < 2) {
-            return false;
-        }
-        for (int i = 2; i <= Math.sqrt(num); i++) {
-            if (num % i == 0) {
-                return false;
-            }
-        }
-        return true;
-    }
-
-    // TODO: dev3- count the frequency of word in sentence,
-    // refactor source code from dev1 and dev2
-    public void countFrequency(String word, String sentence) {
-        // Resetting _ctr to count the frequency
-        _ctr = 0;
-
-        // Tokenize the sentence using StringTokenizer
-        StringTokenizer tokenizer = new StringTokenizer(sentence);
-
-        // Loop through each token in the sentence
-        while (tokenizer.hasMoreTokens()) {
-            String token = tokenizer.nextToken();
-
-            // Check if the current token matches the target word
-            if (token.equals(word)) {
-                // Increment the frequency count
-                _ctr++;
-            }
-        }
-    }
+// TODO: dev3- count the frequency of word in sentence,
+// refactor source code from dev1 and dev2
+public void countFrequency(String word, String sentence) {
+	_ctr = -99;
+}
 }

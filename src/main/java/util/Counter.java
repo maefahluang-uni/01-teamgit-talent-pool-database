@@ -98,6 +98,7 @@ public class Counter {
     // refactor source code from dev1 and dev2
     public void countFrequency(String word, String sentence) {
         // Resetting _ctr to count the frequency
+        _ctr = 0;
 
         // Tokenize the sentence using StringTokenizer
         StringTokenizer tokenizer = new StringTokenizer(sentence);
@@ -109,7 +110,7 @@ public class Counter {
             // Check if the current token matches the target word
             if (token.equals(word)) {
                 // Increment the frequency count
-
+                _ctr++;
             }
         }
     }
